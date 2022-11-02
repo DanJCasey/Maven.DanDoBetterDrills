@@ -76,7 +76,9 @@ public class StringUtilities {
      * @return the first sequence of characters
      */
     public static String getFirstWord(String spaceDelimitedString){
-        return null;
+        String[] newArr = spaceDelimitedString.split(" ", 3);
+        String word = newArr[0];
+        return word;
     }
 
     /**
@@ -84,7 +86,9 @@ public class StringUtilities {
      * @return the second word of a string delimited by spaces.
      */
     public static String getSecondWord(String spaceDelimitedString){
-        return null;
+        String[] newArr = spaceDelimitedString.split(" ", 3);
+        String word = newArr[1];
+        return word;
     }
 
     /**
@@ -92,6 +96,6 @@ public class StringUtilities {
      * @return an identical string with characters in reverse order.
      */
     public static String reverse(String stringToReverse){
-        return null;
+        return new StringBuilder(stringToReverse).reverse().toString();
     }
 }
